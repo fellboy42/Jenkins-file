@@ -1,10 +1,10 @@
 Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image '/home/user/entrypoi…' } }
+    agent { docker { image '/nodered/node-red } }
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'npm start -- --user…'
             }
         }
     }
